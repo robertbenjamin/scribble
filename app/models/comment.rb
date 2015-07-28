@@ -1,3 +1,3 @@
-class Comments < ActiveRecord::Base
-  belongs_to :post, dependent: :destroy
+class Comment < ActiveRecord::Base
+  belongs_to :post
 end
