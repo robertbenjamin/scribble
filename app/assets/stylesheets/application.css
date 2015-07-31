@@ -80,6 +80,10 @@ h1 {
 	padding: 30px;
 }
 
+.header {
+	color: white;
+}
+
 h2 {
 	display: inline-block;
 	font-weight: 700;
