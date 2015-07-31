@@ -12,10 +12,10 @@
 <body>
     <h1 id="heading"><a href="/">This Is Scribble</a></h1>
     <% if session[:user] %>
-        <%= session[:user]["username"] %>: <a href="/sign_out">sign out</a>
+        <h2><%= session[:user]["username"] %>: <a href="/sign_out">sign out</a></h2>
     <% else %>
-        <a href="/sign_up">Sign up</a>
-        <a href="/sign_in">Sign in</a>
+        <h2><a href="/sign_up">Sign up</a></h2>
+        <h2><a href="/sign_in">Sign in</a></h2>
     <% end %>
     <h2><%= flash[:notice] %></h2>
     <%= yield %>

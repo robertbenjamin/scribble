@@ -85,6 +85,7 @@ h1#heading {
 }
 
 h2 {
+	display: inline-block;
 	font-weight: 700;
 	font-size: 1.8em;
 	padding: 30px;
@@ -101,6 +102,11 @@ p {
 	max-width: 800px;
 	text-align: left;
 	line-height: 130%;
+}
+
+img {
+	max-width: 700px;
+	margin: 30px;
 }
 
 a {
