@@ -16,17 +16,18 @@ class CommentsController < ApplicationController
 
   # update
   def update
-    @comment = Comment.find(params[:id])
+    @post = Post.find(params[:post_id])
+    @comment = @post.comments.find(params[:id])
     @comment.update(comment_params)
-    @post = Post.find(params[:id])
     redirect_to post_path(@post)
   end
 
   # destroy
   def destroy
-    @comment = Comment.find(params[:post_id])
+    @post = Post.find(params[:post_id])
+    @comment = @post.comments.find(params[:id])
     @comment.destroy
-    redirect_to posts_path()
+    redirect_to post_path(@post)
   end
 
   private

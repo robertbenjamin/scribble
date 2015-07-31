@@ -1,55 +1,16 @@
 <h2><%= @post.title %> <%= link_to "(edit)", edit_post_path(@post) %></h2>
-<h3><%= @post.author %></h4>
+<h3>By: <%= @post.author %></h4>
 
 <p><%= @post.text %></p>
 
 <!-- Comments go HERE -->
 
-<h2>Add a comment:</h2>
-<%= form_for([@post, @post.comments.build]) do |f| %>
-  <p>
-    <%= f.label :author %><br>
-    <%= f.text_field :author %>
-  </p>
-  <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %>
+<h2>Add a Comment:</h2>
+<%= render 'comments/form' %>
 
-<p>
-  <% @post.comments.each do |comment| %>
-    <li>
-    <h4><%= comment.author %></h4>
-    <p><%= comment.text %></p>
-    </li>
-  <% end %>
-</p>
+<h2>Comments:</h2>
+<%= render @post.comments %>
 
-<% 
-=begin %>
-
-<h3>Comments <a href="/comments/new">(+)</a></h3>
-
-
-
-<%= form_for(@comment) do |f| %>
-
-  <%= f.label :author %>
-  <%= f.text_field :author %>
-
-  <%= f.label :text %>
-  <%= f.text_area :text %>
-
-  <%= f.submit %>
-
-<% end %>
-
-<% 
-=end %>
 
 <!-- @user - User.find_by(name: "Tom") -->
 <!-- @post.comments.find_by(user_id : @user.id) -->

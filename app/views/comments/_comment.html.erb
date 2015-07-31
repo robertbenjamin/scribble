@@ -1,0 +1,8 @@
+<strong><p><%= comment.author %></p></strong>
+<p><%= comment.text %></p>
+<p>
+<% if comment.text != nil %>
+    <%= link_to 'Delete Comment', [comment.post, comment], method: :delete %>
+<% end %>
+</p>
+

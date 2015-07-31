@@ -4,15 +4,14 @@
 <head>
     <title>Scribble</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
 </head>
 
 <body>
-    <a href="/"><h1>Rails Blog</h1></a>
-    <nav>
-        <%= link_to "Posts", posts_path() %>
-    </nav>
+    <h1><a href="/">This Is Scribble</a></h1>
+
     <%= yield %>
 </body>
 
