@@ -78,7 +78,10 @@ h1 {
 	font-weight: 700;
 	font-size: 3em;
 	padding: 30px;
-	color: white;
+}
+
+h1#heading {
+	color: green;
 }
 
 h2 {
@@ -102,7 +105,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: #A7DBD8;
+	color: black;
 }
 
 strong {
@@ -126,7 +129,7 @@ form {
 	font-size: 1.3em;
 }
 
-input {
+input, textarea {
 	display: block;
 	font-size: 1.3em;
 	padding: 5px;
@@ -140,6 +143,12 @@ input[type="submit"] {
 	padding: 15px;
 	font-weight: 700;
 	font-size: 1.2em;
+}
+
+textarea {
+	height: 15em;
+	font-size: 1em;
+	width: 30em;
 }
 
 input[type="submit"]:hover {

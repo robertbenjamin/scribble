@@ -4,14 +4,20 @@
 <head>
     <title>Scribble</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
+        <link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+            <%= csrf_meta_tags %>
 </head>
 
 <body>
-    <h1><a href="/">This Is Scribble</a></h1>
-
+    <h1 id="heading"><a href="/">This Is Scribble</a></h1>
+    <% if session[:user] %>
+        <%= session[:user]["username"] %>: <a href="/sign_out">sign out</a>
+    <% else %>
+        <a href="/sign_up">Sign up</a>
+        <a href="/sign_in">Sign in</a>
+    <% end %>
+    <h2><%= flash[:notice] %></h2>
     <%= yield %>
 </body>
 

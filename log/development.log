@@ -9731,3 +9731,1133 @@ Processing by PostsController#index as HTML
   [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
   Rendered posts/index.html.erb within layouts/application (0.6ms)
 Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 00:35:19 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 43ms (Views: 40.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-4e8dee9002a5bd94a89bf9e728f885d227b9df4216b9d38af23f1ef8b8ab0f4a.css?body=1" for ::1 at 2015-07-31 00:35:19 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 00:35:19 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 00:35:19 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 00:35:19 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 00:35:19 -0400
+
+
+Started GET "/posts/3" for ::1 at 2015-07-31 00:35:20 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_form.html.erb (4.6ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  Rendered comments/_comment.html.erb (1.2ms)
+  Rendered posts/show.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 68ms (Views: 65.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 00:35:22 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-07-31 00:35:24 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered comments/_form.html.erb (2.7ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (0.7ms)
+  Rendered posts/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 52ms (Views: 49.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:17:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.9ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 245ms (Views: 214.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:17:06 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:17:06 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:17:06 -0400
+
+
+Started GET "/posts/3" for ::1 at 2015-07-31 09:17:08 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered comments/_form.html.erb (55.7ms)
+  [1m[35mComment Load (0.6ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 3]]
+  Rendered comments/_comment.html.erb (1.1ms)
+  Rendered posts/show.html.erb within layouts/application (69.5ms)
+Completed 200 OK in 148ms (Views: 133.7ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:17:10 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2" for ::1 at 2015-07-31 09:17:11 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_form.html.erb (3.0ms)
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered comments/_comment.html.erb (0.1ms)
+  Rendered posts/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:17:12 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 61ms (Views: 58.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:17:41 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-f848df79183adea5b0d1b6b3bd8cfde931b640c0063533647aa374025102695e.css?body=1" for ::1 at 2015-07-31 09:17:41 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:17:41 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:17:41 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:17:41 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:17:41 -0400
+
+
+Started GET "/" for ::1 at 2015-07-31 09:17:52 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 66ms (Views: 64.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:17:52 -0400
+
+
+Started GET "/assets/application.self-2c726a58728bdcc07e4518d65f74e32e8097cba0a5bc0e4683dd89822c2c4e8a.css?body=1" for ::1 at 2015-07-31 09:17:52 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:17:52 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:17:52 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:17:52 -0400
+
+
+Started GET "/posts/2" for ::1 at 2015-07-31 09:17:52 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_form.html.erb (2.2ms)
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  Rendered comments/_comment.html.erb (0.1ms)
+  Rendered posts/show.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:17:55 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:18:37 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-9433b4f431dba13e61311e2390d143c1c97c4c9e383be876f256374f983f165e.css?body=1" for ::1 at 2015-07-31 09:18:37 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:18:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:18:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:18:37 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:18:37 -0400
+
+
+Started GET "/" for ::1 at 2015-07-31 09:18:38 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 36.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:18:39 -0400
+
+
+Started GET "/assets/application.self-9433b4f431dba13e61311e2390d143c1c97c4c9e383be876f256374f983f165e.css?body=1" for ::1 at 2015-07-31 09:18:39 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:18:39 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:18:39 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:18:39 -0400
+
+
+Started GET "/" for ::1 at 2015-07-31 09:18:46 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 75ms (Views: 73.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-67f2efcc7e8593c490cb14ec4dc75eeb4af14df0584170508e1ca4d18f9cbed7.css?body=1" for ::1 at 2015-07-31 09:18:46 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:18:46 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:18:46 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:18:46 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:18:46 -0400
+
+
+Started GET "/" for ::1 at 2015-07-31 09:19:51 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 72ms (Views: 69.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-5d6be88d082ac187bdbd6a7d1716b5a36802a5b36d89b5065b30438ef972d0f3.css?body=1" for ::1 at 2015-07-31 09:19:51 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:19:51 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:19:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:19:51 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:19:51 -0400
+
+
+Started GET "/" for ::1 at 2015-07-31 09:20:13 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 75ms (Views: 73.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:20:13 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:20:13 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:20:13 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:20:13 -0400
+
+
+Started GET "/assets/application.self-4dc452fd30b15b418431fd628b6fd4e640350df51aecd8c8bb16d277803ca648.css?body=1" for ::1 at 2015-07-31 09:20:13 -0400
+
+
+Started GET "/" for ::1 at 2015-07-31 09:20:14 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/3" for ::1 at 2015-07-31 09:20:15 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (2.8ms)
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered comments/_comment.html.erb (0.4ms)
+  Rendered posts/show.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:20:27 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 28ms (Views: 26.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:20:28 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-07-31 09:20:29 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.5ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered comments/_form.html.erb (2.3ms)
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (0.6ms)
+  Rendered posts/show.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:20:32 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2" for ::1 at 2015-07-31 09:20:49 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered comments/_form.html.erb (2.6ms)
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 2]]
+  Rendered comments/_comment.html.erb (0.1ms)
+  Rendered posts/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 51ms (Views: 49.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2015-07-31 09:20:51 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/_form.html.erb (4.1ms)
+  Rendered posts/edit.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:20:53 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:22:00 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 71ms (Views: 68.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-91b8959bd25d5de04c89372e39bb47e36b1dc81a6d6dd47b1a20a6cebdc727f7.css?body=1" for ::1 at 2015-07-31 09:22:00 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:22:00 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:22:00 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:22:00 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:22:00 -0400
+
+
+Started GET "/posts/2" for ::1 at 2015-07-31 09:22:00 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_form.html.erb (2.5ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered comments/_comment.html.erb (0.1ms)
+  Rendered posts/show.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2015-07-31 09:22:02 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered posts/_form.html.erb (4.3ms)
+  Rendered posts/edit.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2015-07-31 09:22:24 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/_form.html.erb (4.9ms)
+  Rendered posts/edit.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:22:24 -0400
+
+
+Started GET "/assets/application.self-91b8959bd25d5de04c89372e39bb47e36b1dc81a6d6dd47b1a20a6cebdc727f7.css?body=1" for ::1 at 2015-07-31 09:22:24 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:22:24 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:22:24 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:22:24 -0400
+
+
+Started GET "/posts/2/edit" for ::1 at 2015-07-31 09:22:53 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered posts/_form.html.erb (3.1ms)
+  Rendered posts/edit.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-9bd8a1712d2b51884a689438c98064c3ca1d1e8c1e28254138bea6b70e5b22a8.css?body=1" for ::1 at 2015-07-31 09:22:53 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:22:53 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:22:53 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:22:53 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:22:53 -0400
+
+
+Started GET "/posts/2/edit" for ::1 at 2015-07-31 09:23:04 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/_form.html.erb (8.6ms)
+  Rendered posts/edit.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 75ms (Views: 74.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-a274bccbd37f417272c97f87c7e57f2377818d1e0e0ab142da407542e2c551c6.css?body=1" for ::1 at 2015-07-31 09:23:04 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:23:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:23:04 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:23:04 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:23:04 -0400
+
+
+Started GET "/posts/2/edit" for ::1 at 2015-07-31 09:23:15 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered posts/_form.html.erb (2.7ms)
+  Rendered posts/edit.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 91ms (Views: 90.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-6731498220cc3d3aa3a95b4b347c102b64ec415a94dec4c0608c3df6200c1399.css?body=1" for ::1 at 2015-07-31 09:23:15 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:23:15 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:23:15 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:23:15 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:23:15 -0400
+
+
+Started GET "/posts/2/edit" for ::1 at 2015-07-31 09:23:29 -0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered posts/_form.html.erb (2.7ms)
+  Rendered posts/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 96ms (Views: 93.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:23:29 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:23:29 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:23:29 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:23:29 -0400
+
+
+Started GET "/assets/application.self-8089fb53d3b8ea02f89138006897f3726e5c0b0a1966c40c7dfc6e3bed3c75ec.css?body=1" for ::1 at 2015-07-31 09:23:29 -0400
+
+
+Started GET "/" for ::1 at 2015-07-31 09:23:36 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-07-31 09:23:37 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_form.html.erb (3.8ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (1.0ms)
+  Rendered posts/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:23:49 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 30ms (Views: 28.9ms | ActiveRecord: 0.3ms)
+  [1m[36m (4.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20150728041652)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.6ms)[0m  [1mCREATE TABLE "posts" ("id" serial primary key, "author" character varying, "title" character varying, "text" text, "date" character varying) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150728041652"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150728041755)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (5.5ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "author" character varying, "text" text, "post_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (1.2ms)[0m  CREATE  INDEX  "index_comments_on_post_id" ON "comments"  ("post_id")
+  [1m[36m (5.4ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150728041755"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20150731132423)
+  [1m[35m (0.8ms)[0m  BEGIN
+  [1m[36m (4.6ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "password_digest" character varying) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150731132423"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (9.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (6.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (4.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2015-07-31 09:27:53 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 296ms (Views: 275.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:35:48 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 64ms (Views: 56.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.self-8089fb53d3b8ea02f89138006897f3726e5c0b0a1966c40c7dfc6e3bed3c75ec.css?body=1" for ::1 at 2015-07-31 09:35:48 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:35:48 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:35:48 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:35:48 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:35:48 -0400
+
+
+Started GET "/sign_in" for ::1 at 2015-07-31 09:35:52 -0400
+Processing by UsersController#sign_in as HTML
+  Rendered users/sign_in.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for ::1 at 2015-07-31 09:35:54 -0400
+Processing by UsersController#sign_up as HTML
+  Rendered users/sign_up.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 77ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_up" for ::1 at 2015-07-31 09:36:02 -0400
+Processing by UsersController#sign_up! as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UOn3dSbm7GZev7zIaWes1xx7NGzzJeC3s6QcSG60OPhBKdNhGrufYTD4/0A1/+1q5yJbJX71YVH/LZBYruRaXw==", "username"=>"robert", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'robert' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("username", "password_digest") VALUES ($1, $2) RETURNING "id"  [["username", "robert"], ["password_digest", "hello"]]
+  [1m[36m (0.8ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/sign_up
+Completed 302 Found in 42ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/sign_up" for ::1 at 2015-07-31 09:36:02 -0400
+Processing by UsersController#sign_up as HTML
+  Rendered users/sign_up.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 52ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2015-07-31 09:36:05 -0400
+Processing by UsersController#sign_in as HTML
+  Rendered users/sign_in.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2015-07-31 09:36:08 -0400
+Processing by UsersController#sign_in! as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B7UKI7LToWdtrv7VUWX04kzPCipC5dbnlJvSLfqgTUgWdS43jo7SYAPpvV0N/bVft5ZlY881VwHYEl49OvAv7w==", "username"=>"robert", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1  [["username", "robert"]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 13ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sign_in" for ::1 at 2015-07-31 09:36:08 -0400
+Processing by UsersController#sign_in as HTML
+  Rendered users/sign_in.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:36:10 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:37:37 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 39ms (Views: 33.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-8089fb53d3b8ea02f89138006897f3726e5c0b0a1966c40c7dfc6e3bed3c75ec.css?body=1" for ::1 at 2015-07-31 09:37:37 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:37:37 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:37:37 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:37:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:37:37 -0400
+
+
+Started GET "/sign_up" for ::1 at 2015-07-31 09:37:38 -0400
+Processing by UsersController#sign_up as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `message' for #<UsersController:0x007ff3cb2a0190>):
+  app/controllers/users_controller.rb:4:in `sign_up'
+
+
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (132.0ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (70.1ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (165.4ms)
+
+
+Started GET "/sign_up" for ::1 at 2015-07-31 09:37:39 -0400
+Processing by UsersController#sign_up as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `message' for #<UsersController:0x007ff3c7dff120>):
+  app/controllers/users_controller.rb:4:in `sign_up'
+
+
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.9ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (90.9ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (68.5ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/robertbenjamin/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (151.0ms)
+
+
+Started GET "/sign_up" for ::1 at 2015-07-31 09:38:19 -0400
+Processing by UsersController#sign_up as HTML
+  Rendered users/sign_up.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8089fb53d3b8ea02f89138006897f3726e5c0b0a1966c40c7dfc6e3bed3c75ec.css?body=1" for ::1 at 2015-07-31 09:38:19 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-07-31 09:38:19 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-07-31 09:38:19 -0400
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for ::1 at 2015-07-31 09:38:19 -0400
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-07-31 09:38:19 -0400
+
+
+Started POST "/sign_up" for ::1 at 2015-07-31 09:38:26 -0400
+Processing by UsersController#sign_up! as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MCc96i0U6usedhX4/zEWvEe2y6/7Muq7haGljrFqWMkh5xn+EUmZ7HAxVnCjqVcBvO+k5nbia13JKCmecTo6bg==", "username"=>"robert", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'robert' LIMIT 1
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+Redirected to http://localhost:3000/sign_up
+Completed 302 Found in 20ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/sign_up" for ::1 at 2015-07-31 09:38:26 -0400
+Processing by UsersController#sign_up as HTML
+  Rendered users/sign_up.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+  [1m[36m (4.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20150728041652)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.9ms)[0m  [1mCREATE TABLE "posts" ("id" serial primary key, "author" character varying, "title" character varying, "text" text, "date" character varying) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150728041652"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150728041755)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.0ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "author" character varying, "text" text, "created_at" timestamp, "post_id" integer) [0m
+  [1m[35m (1.1ms)[0m  CREATE  INDEX  "index_comments_on_post_id" ON "comments"  ("post_id")
+  [1m[36m (3.5ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150728041755"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20150731132423)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "password_digest" character varying) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150731132423"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (6.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (7.7ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (7.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/sign_up" for ::1 at 2015-07-31 09:44:56 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#sign_up as HTML
+  Rendered users/sign_up.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 254ms (Views: 242.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_up" for ::1 at 2015-07-31 09:45:06 -0400
+Processing by UsersController#sign_up! as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vHm1wB6jEtSdVmvPvumGq63eYVq52TYdGBOBSTzwiIytuZHUIv5h0/MRKEficccWVocOEzQJt/tUmg1Z/KDqKw==", "username"=>"robert", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.1ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."username" = 'robert' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("username", "password_digest") VALUES ($1, $2) RETURNING "id"  [["username", "robert"], ["password_digest", "$2a$10$WjJBvour7AivdzVLPYk/S.IIfxZwefEleOivxjr0/6.Akrbo0/uuC"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/sign_up
+Completed 302 Found in 114ms (ActiveRecord: 6.7ms)
+
+
+Started GET "/sign_up" for ::1 at 2015-07-31 09:45:06 -0400
+Processing by UsersController#sign_up as HTML
+  Rendered users/sign_up.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 62ms (Views: 61.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2015-07-31 09:45:08 -0400
+Processing by UsersController#sign_in as HTML
+  Rendered users/sign_in.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 37ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sign_in" for ::1 at 2015-07-31 09:45:12 -0400
+Processing by UsersController#sign_in! as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YNRpQ8+MZu/odCsKYQ2sy6mdeODLKyzly2JSm1KrjSxxFE1X89EV6IYzaII9le12UsQXqUb7rQOH696Lkvvviw==", "username"=>"robert", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT 1  [["username", "robert"]]
+Redirected to http://localhost:3000/sign_in
+Completed 302 Found in 95ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/sign_in" for ::1 at 2015-07-31 09:45:12 -0400
+Processing by UsersController#sign_in as HTML
+  Rendered users/sign_in.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:45:13 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (2.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 97ms (Views: 79.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/posts/new" for ::1 at 2015-07-31 09:45:14 -0400
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (37.9ms)
+  Rendered posts/new.html.erb within layouts/application (49.7ms)
+Completed 200 OK in 123ms (Views: 111.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/posts" for ::1 at 2015-07-31 09:45:41 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AydujUyIM719WoC/83yCwm3+0I1mcNPOUxt3kaWTMXkS50qZcNVAuhMdwzev5MN/lqe/xOugUigfkvuBZcNT3g==", "post"=>{"author"=>"Robert", "title"=>"This is a post!", "text"=>"Biodiesel Wes Anderson sriracha, chia bitters cray Pinterest pop-up tattooed Pitchfork craft beer. Lomo keytar farm-to-table, Schlitz twee lumbersexual synth. Wayfarers 3 wolf moon try-hard, Intelligentsia Marfa lo-fi bitters twee iPhone vinyl. Pork belly Truffaut migas Schlitz tofu. Sartorial Brooklyn squid retro, cred asymmetrical vegan Wes Anderson chillwave ethical. Health goth ethical swag irony. Kickstarter cronut heirloom artisan, pop-up beard 90's synth raw denim wayfarers butcher.\r\n\r\nPost-ironic biodiesel taxidermy Williamsburg squid beard, kale chips Helvetica swag leggings pour-over migas Thundercats. Put a bird on it lo-fi irony heirloom 3 wolf moon trust fund, seitan Wes Anderson health goth. Flexitarian leggings put a bird on it umami Truffaut. Yr Thundercats food truck letterpress, small batch tattooed +1 craft beer semiotics fanny pack. Brunch Neutra bespoke Carles. Hashtag selfies Intelligentsia PBR fixie Marfa. Pinterest hashtag 3 wolf moon aesthetic, irony cornhole stumptown.", "date"=>"July 3, 2012"}, "commit"=>"Create Post"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "posts" ("author", "title", "text", "date") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["author", "Robert"], ["title", "This is a post!"], ["text", "Biodiesel Wes Anderson sriracha, chia bitters cray Pinterest pop-up tattooed Pitchfork craft beer. Lomo keytar farm-to-table, Schlitz twee lumbersexual synth. Wayfarers 3 wolf moon try-hard, Intelligentsia Marfa lo-fi bitters twee iPhone vinyl. Pork belly Truffaut migas Schlitz tofu. Sartorial Brooklyn squid retro, cred asymmetrical vegan Wes Anderson chillwave ethical. Health goth ethical swag irony. Kickstarter cronut heirloom artisan, pop-up beard 90's synth raw denim wayfarers butcher.\r\n\r\nPost-ironic biodiesel taxidermy Williamsburg squid beard, kale chips Helvetica swag leggings pour-over migas Thundercats. Put a bird on it lo-fi irony heirloom 3 wolf moon trust fund, seitan Wes Anderson health goth. Flexitarian leggings put a bird on it umami Truffaut. Yr Thundercats food truck letterpress, small batch tattooed +1 craft beer semiotics fanny pack. Brunch Neutra bespoke Carles. Hashtag selfies Intelligentsia PBR fixie Marfa. Pinterest hashtag 3 wolf moon aesthetic, irony cornhole stumptown."], ["date", "July 3, 2012"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/posts
+Completed 302 Found in 6ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/posts" for ::1 at 2015-07-31 09:45:41 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 58ms (Views: 55.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-07-31 09:45:43 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered comments/_form.html.erb (39.6ms)
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (0.9ms)
+  Rendered posts/show.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 87ms (Views: 82.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:45:46 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/sign_out" for ::1 at 2015-07-31 09:45:48 -0400
+Processing by UsersController#sign_out as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:45:48 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.5ms)
+  [1m[36m (4.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePosts (20150728041652)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (5.3ms)[0m  [1mCREATE TABLE "posts" ("id" serial primary key, "author" character varying, "title" character varying, "text" text, "date" character varying) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150728041652"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150728041755)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (4.6ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "author" character varying, "text" text, "created_at" timestamp, "post_id" integer) [0m
+  [1m[35m (1.1ms)[0m  CREATE  INDEX  "index_comments_on_post_id" ON "comments"  ("post_id")
+  [1m[36m (3.1ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150728041755"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateUsers (20150731132423)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (6.5ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "username" character varying, "password_digest" character varying) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150731132423"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (8.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'posts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mPost Load (0.7ms)[0m  SELECT "posts".* FROM "posts"
+  [1m[36mComment Load (0.7ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "posts" ("author", "title", "text", "date") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["author", "Robert Benjamin"], ["title", "Local Peaks"], ["text", "A local peak is a small hill next to a hundred other small hills, next to a few medium mountains, and a bit aways from the towering Everest. It’s getting really damn good at  walking to the end of your driveway but never trying to run a mile. It’s the entire concept of steampunk. It’s obsessing over getting better and better at your job without really thinking if it’s the right job."], ["date", "May 1, 2015"]]
+  [1m[35m (0.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "posts" ("author", "title", "text", "date") VALUES ($1, $2, $3, $4) RETURNING "id"  [["author", "Benjamin Franklin"], ["title", "On Money"], ["text", "Money has never made man happy, nor will it, there is nothing in its nature to produce happiness. The more of it one has the more one wants."], ["date", "December 12, 1764"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("author", "title", "text", "date") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["author", "Ernest Hemingway"], ["title", "A Serious Writer"], ["text", "A serious writer is not to be confounded with a solemn writer. A serious writer may be a hawk or a buzzard or even a popinjay, but a solemn writer is always a bloody owl."], ["date", "July 4, 1943"]]
+  [1m[35m (0.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "posts" ("author", "title", "text", "date") VALUES ($1, $2, $3, $4) RETURNING "id"  [["author", "Donna Tart"], ["title", "A Great Sorrow"], ["text", "A great sorrow, and one that I am only beginning to understand: we don’t get to choose our own hearts. We can’t make ourselves want what’s good for us or what’s good for other people. We don’t get to choose the people we are."], ["date", "September 23, 2013"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+
+
+Started GET "/" for ::1 at 2015-07-31 09:48:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.8ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 232ms (Views: 204.4ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/posts/4" for ::1 at 2015-07-31 09:48:34 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered comments/_form.html.erb (70.9ms)
+  [1m[35mComment Load (0.6ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 4]]
+  Rendered comments/_comment.html.erb (1.1ms)
+  Rendered posts/show.html.erb within layouts/application (85.0ms)
+Completed 200 OK in 136ms (Views: 120.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:48:36 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2" for ::1 at 2015-07-31 09:48:37 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered comments/_form.html.erb (2.4ms)
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 2]]
+  Rendered comments/_comment.html.erb (0.1ms)
+  Rendered posts/show.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 59ms (Views: 56.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:48:39 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/1" for ::1 at 2015-07-31 09:48:39 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered comments/_form.html.erb (4.1ms)
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1  [["post_id", 1]]
+  Rendered comments/_comment.html.erb (0.1ms)
+  Rendered posts/show.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 60ms (Views: 58.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:48:41 -0400
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/3" for ::1 at 2015-07-31 09:48:42 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.6ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered comments/_form.html.erb (2.4ms)
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 3]]
+  Rendered comments/_comment.html.erb (0.1ms)
+  Rendered posts/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-07-31 09:48:45 -0400
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.4ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sign_in" for ::1 at 2015-07-31 09:48:51 -0400
+Processing by UsersController#sign_in as HTML
+  Rendered users/sign_in.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for ::1 at 2015-07-31 09:48:53 -0400
+Processing by UsersController#sign_up as HTML
+  Rendered users/sign_up.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2015-07-31 09:48:54 -0400
+Processing by UsersController#sign_in as HTML
+  Rendered users/sign_in.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
