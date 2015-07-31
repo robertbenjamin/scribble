@@ -14,7 +14,6 @@ second_post = Post.create(author: "Benjamin Franklin", title: "On Money", text: 
 third_post = Post.create(author: "Ernest Hemingway", title: "A Serious Writer", text: "A serious writer is not to be confounded with a solemn writer. A serious writer may be a hawk or a buzzard or even a popinjay, but a solemn writer is always a bloody owl.", date: "July 4, 1943")
 fourth_post = Post.create(author: "Donna Tart", title: "A Great Sorrow", text: "A great sorrow, and one that I am only beginning to understand: we don’t get to choose our own hearts. We can’t make ourselves want what’s good for us or what’s good for other people. We don’t get to choose the people we are.", date: "September 23, 2013"
 
-
 Comment.create(author: "Fred Fredkins", text: "Great post bro! I loved this one! Absolutely fantastic!", post: first_post.id)
 Comment.create(author: "Bob Bobbins", text: "I have nothing to say, at all.", post: first_post.id)
 Comment.create(author: "Captain Jack Sparrow", text: "Where's the rum gone?", post: second_post.id)

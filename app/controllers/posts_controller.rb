@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   # index
   def index
-    @posts = Post.all
+    @posts = Post.all.reverse
   end
 
   # new
@@ -12,8 +12,7 @@ class PostsController < ApplicationController
   # create
   def create
     @post = Post.create!(post_params)
-    redirect_to post_path(@post)
-    # redirect_to "/posts/#{@post.id}"
+    redirect_to posts_path()
   end
 
   #show

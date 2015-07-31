@@ -5,14 +5,52 @@
 
 <!-- Comments go HERE -->
 
-<h3>Comments <a href="/comments/new">(+)</a></h3>
+<h2>Add a comment:</h2>
+<%= form_for([@post, @post.comments.build]) do |f| %>
+  <p>
+    <%= f.label :author %><br>
+    <%= f.text_field :author %>
+  </p>
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
 
-<ul>
+<p>
   <% @post.comments.each do |comment| %>
     <li>
-    <h4><%= link_to "#{comment.author}", comment %></h4>
-    <p><%= @comment.text %></p>
-    	
+    <h4><%= comment.author %></h4>
+    <p><%= comment.text %></p>
     </li>
   <% end %>
-</ul>
+</p>
+
+<% 
+=begin %>
+
+<h3>Comments <a href="/comments/new">(+)</a></h3>
+
+
+
+<%= form_for(@comment) do |f| %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.label :text %>
+  <%= f.text_area :text %>
+
+  <%= f.submit %>
+
+<% end %>
+
+<% 
+=end %>
+
+<!-- @user - User.find_by(name: "Tom") -->
+<!-- @post.comments.find_by(user_id : @user.id) -->
+<!-- @post.comments.find_by(user_id: User.find_by(name: "Tom").id) -->
