@@ -80,10 +80,6 @@ h1 {
 	padding: 30px;
 }
 
-h1#heading {
-	color: green;
-}
-
 h2 {
 	display: inline-block;
 	font-weight: 700;
@@ -92,8 +88,24 @@ h2 {
 }
 
 h3 {
+	display: block;
+	clear: both;
 	font-size: 1.5em;
 	padding: 0 30px 20px 30px;
+}
+
+.post-title {
+	float: left;
+}
+
+nav {
+	margin: 30px;
+	margin-bottom: -5px;
+	font-size: 1.3em;
+}
+
+nav > a {
+	padding-right: 10px;
 }
 
 p {

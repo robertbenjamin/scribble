@@ -10,13 +10,15 @@
 </head>
 
 <body>
-    <h1 id="heading"><a href="/">This Is Scribble</a></h1>
+    <h1><a href="/">Two Different Ideas</a></h1>
+    <nav>
     <% if session[:user] %>
-        <h2><%= session[:user]["username"] %>: <a href="/sign_out">sign out</a></h2>
+        <%= session[:user]["username"] %>: <a href="/sign_out">sign out</a></h2>
     <% else %>
-        <h2><a href="/sign_up">Sign up</a></h2>
-        <h2><a href="/sign_in">Sign in</a></h2>
+        <a href="/sign_up">Sign up</a></h2>
+        <a href="/sign_in">Sign in</a></h2>
     <% end %>
+    </nav>
     <h2><%= flash[:notice] %></h2>
     <%= yield %>
 </body>

@@ -16,7 +16,7 @@ class UsersController < ApplicationController
       message = "Your account couldn't be created. Did you enter a unique username and password?"
     end
     flash[:notice] = message
-    redirect_to action: :sign_up
+    redirect_to action: :sign_in
   end
 
   def sign_in
@@ -37,7 +37,7 @@ class UsersController < ApplicationController
       session[:user] = @user
     end
     flash[:notice] = message
-    redirect_to action: :sign_in
+    redirect_to root_url
   end
 
   def sign_out
