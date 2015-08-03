@@ -13,6 +13,15 @@ class PostsController < ApplicationController
   def create
     @user = User.find(session[:user]["id"])
     @post = Post.create!(post_params)
+
+    # you should probably assoicate the user and the post here:
+    @post.user = current_user
+    @post.save
+
+    # or you could replace the second line of your version above:
+    @post = @user.posts.create!(post_params)
+    # (this will create post with the params, and it will be associated with the user already)
+
     redirect_to post_path(@post)
   end
 
